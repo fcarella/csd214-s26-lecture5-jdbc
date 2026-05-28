@@ -1,5 +1,21 @@
 ***
 
+## 🛑 CSD214 S26 Lecture 5: JDBC Persistence Preface
+This repository serves as the official base for the **Lecture 5 In-Class Exercise**. Building upon the Object-Oriented foundations established in previous weeks, we are now transitioning from volatile, in-memory storage (ArrayLists) to persistent storage using **MySQL** and **JDBC (Java Database Connectivity)**.
+
+### **JDBC Implementation Overview**
+The `bookstore.jdbc` package contains new logic that demonstrates the lifecycle of data within a professional Java application:
+
+*   **Database Infrastructure:** Utilizes the provided `docker-compose.yml` to spin up a containerized MySQL 8.0 instance.
+*   **CRUD Operations:** `JdbcBookApp.java` provides a blueprint for the **Create, Read, Update, and Delete** cycle using `PreparedStatement` to ensure protection against SQL Injection attacks.
+*   **Object-Relational Bridging:** `JdbcFullApp.java` demonstrates how to "rehydrate" Java objects from database rows, execute business logic (such as `sellItem()`), and synchronize those changes back to the database.
+*   **Dependency Management:** The `pom.xml` has been updated with the necessary MySQL Connector/J drivers to facilitate communication between the JVM and the database container.
+
+**Goal:** By the end of this exercise, you will understand how to replace a temporary `ArrayList` with a robust, persistent database while maintaining the integrity of your existing class hierarchy.
+
+***
+***
+
 # Bookstore CLI Application
 - for the csd214 course summer 26 delivery : [course outline](https://welearn.saultcollege.ca/shared/CourseOutlines/csd214_Course_Outline.pdf) 
 > - [git repository](https://github.com/fcarella/lab1-exercise-fred-carella-csd214-s26)
