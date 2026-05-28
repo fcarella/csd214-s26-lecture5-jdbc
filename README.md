@@ -1,6 +1,6 @@
 ***
 
-## 🛑 CSD214 S26 Lecture 5: JDBC Persistence Preface
+## 🛑 CSD214 S26 Lecture 5:  Introduction to JDBC, Raw SQL and in class exercise
 This repository serves as the official base for the **Lecture 5 In-Class Exercise**. Building upon the Object-Oriented foundations established in previous weeks, we are now transitioning from volatile, in-memory storage (ArrayLists) to persistent storage using **MySQL** and **JDBC (Java Database Connectivity)**.
 
 ### **JDBC Implementation Overview**
